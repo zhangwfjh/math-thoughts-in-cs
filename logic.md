@@ -92,6 +92,7 @@
 * $$∃x,∀y:p(x,y)⇎∀y,∃x:p(x,y)$$
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/02/Predicate_logic%3B_2_variables%3B_example_matrix_e1a2.svg)![](https://upload.wikimedia.org/wikipedia/commons/6/62/Predicate_logic%3B_2_variables%3B_example_matrix_a2e1.svg)
+
 左侧表示至少有一行格子每一列都被填充，也就是说可以有一行或多行被填充，但必然一行中只要有一个格子被填充则该行所有格子都被填充。右侧表示每一列都至少有一个格子被填充，这些被填充的格子可以在同一行，也可以在不同行。
 
 注意到，我们实际上有：
