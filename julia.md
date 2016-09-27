@@ -112,7 +112,7 @@ julia> 1<=2, >(1,2)
 ### 关系算子
 
 | 算子 | 说明 | 示例 |
-| ```--``` | -- | -- |
+| -- | -- | -- |
 | ```==``` | 相等比较 | ```1==2```返回```false``` |
 | ```!=``` | 不等比较 | ```1!=2```返回```true``` |
 | ```>, >=``` | 大于, 大于或等于 | ```1>2, 1>=2, 2>=2>3```返回```false``` |
@@ -324,7 +324,7 @@ julia> if x >= 60
 ```
 julia> eveness(x) = x%2 == 0 ? true : false;
 julia> eveness(1), eveness(2)
-false, true
+（false, true)
 ```
 
 #### ```ifelse```函数
@@ -377,7 +377,7 @@ julia> for x in [2,0,3,0,4]
 ```
 julia> for x = 1:2:10
           print(x+1)
-        end
+       end
 246810
 ```
 
@@ -417,7 +417,7 @@ julia> x = 5;
        while(true)
          abs(x-sqrt(2)) < 1e-5 && break
          println(x)
-         x = x-(x^2-2)/2x
+         x -= (x^2-2)/2x
        end
 5
 2.7
