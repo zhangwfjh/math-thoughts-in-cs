@@ -1,6 +1,7 @@
 # Summary
 
 * [前言](README.md)
+   * 算法分析基础
 * [Julia语言基础](julia.md)
    * [安装及使用](julia.md#安装及使用)
    * [变量](julia.md#变量)
@@ -32,7 +33,6 @@
    * [谓词逻辑](logic.md#谓词逻辑)
        * [量词](logic.md#量词)
        * [哥德尔不完备性定理](logic.md#哥德尔不完备性定理)
-       * [练习](logic.md#练习)
 * [公理集合论](set_theory.md)
    * [ZF公理体系](set_theory.md#ZF公理体系)
        * [外延公理](set_theory.md#外延公理)
