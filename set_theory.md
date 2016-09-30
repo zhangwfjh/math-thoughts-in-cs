@@ -342,9 +342,52 @@ end
 
 ### 集合的构造
 
-通常，许多集合要从已知的集合
+在许多实际问题中，我们要从已知的集合中筛选出一部分满足某种性质$$P$$的元素。分离公理告诉我们了我们该如何选取这些元素。给定一个集合待筛选集合$$A$$，性质$$P$$通常由布尔函数给出，我们只需检查每个$$A$$中的元素是否满足$$P$$即可。
+```
+function setseparate(A,P)
+  B = []
+  for a in A P(a) && push!(B,a) end
+  return B
+end
+```
+有时，性质$$P$$并不需要通过函数给出，我们可以将$$P$$的性质内嵌到构造中。
+```
+function setseparate(A)
+  B = []
+  for a in A
+    res = begin
+            P(a)
+          end
+    res || push!(B,a)
+  end
+  return B
+end
+```
+
+替代公理指出，我们能够从已有集合直接通过计算映射到所需要的集合。给定集合$$A$$和映射$$f$$，则$$f(A)$$可如此构造
+```
+function setreplace(A,f)
+  B = []
+  for a in A push!(B, f(a)) end
+  return
+end
+```
+如果$$f$$未直接给出，可以将其内嵌到构造中。
+```
+function setreplace(A)
+  B = []
+  for a in A
+    b = begin
+          f(a)
+        end
+    push!(B, b) end
+  return
+end
+```
 
 ### 大集合的生成
+
+
 
 ### 练习
 
