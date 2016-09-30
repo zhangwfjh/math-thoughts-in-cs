@@ -1,7 +1,6 @@
 # Summary
 
 * [前言](README.md)
-   * 算法分析基础
 * [Julia语言基础](julia.md)
    * [安装及使用](julia.md#安装及使用)
    * [变量](julia.md#变量)
