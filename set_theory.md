@@ -307,10 +307,38 @@ equalset(A,B) = length(A) == length(B) && subset(A,B)
 ```
 不难分析得出，`equalset`的最坏时间复杂度也是$$O(|A||B|)$$。
 
+`length`函数还有一个作用是可以很方便地判断一个集合是否为空集。
+```
+emptyset(A) = length(A) == 0
+```
+
 ### 集合的运算
 
-
-
+我们首先来实现交集运算，根据定义，交集是两个集合的公共元素所组成的集合。因此只需检查一个集合中的每个元素是否属于另一个集合，如果属于，则该元素应该放入交集中。
+```
+function setintersect(A,B)
+  C = []
+  for a in A inset(a,B) && push!(C,a) end
+  return C
+end
+```
+相似的，两个集合的差集只需检查一个集合中的每个元素是否属于另一个集合，如果不属于，则该元素放入差集中。
+```
+function setminus(A,B)
+  C = []
+  for a in A inset(a,B) || push!(C,a) end
+  return C
+end
+```
+在实现集合的并集时，我们要考虑到任何元素不可被重复加入到集合中。一种可取的做法是在加入另一个集合的元素时，如果为公共元素，则不添加至并集之中。
+```
+function setunion(A,B)
+  C = B
+  for a in A inset(a,B) || push!(C,a) end
+  return C
+end
+```
+三个函数的最坏时间复杂度均为$$O(|A||B|)$$。
 
 ### 练习
 
