@@ -381,6 +381,16 @@ julia> for x = 1:2:10
 246810
 ```
 
+有时，给遍历的元素加入一个序号能给程序带来许多方便，Julia允许我们使用`enumerate`函数实现这一点。
+```
+julia> for (i,x) in enumerate("abc")
+         println("$i=>$x")
+       end
+1=>a
+2=>b
+3=>c
+```
+
 在Julia中，for循环还可以遍历两个集合的笛卡尔积。
 ```
 julia> for x=1:2, y=1:3
