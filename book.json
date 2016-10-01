@@ -1,11 +1,18 @@
 {
     "plugins": [
         "mathjax",
-        "gtoc"
+        "disqus",
+        "prism", 
+        "toc",
+        "synapse",
+        "-highlight"
     ],
     "pluginsConfig": {
         "search": {
-                "maxIndexSize": 100000
+                "maxIndexSize": 100000000
+        }
+        "disqus": {
+            "shortName": "zhangwfjh"
         }
     }
 }
