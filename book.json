@@ -5,7 +5,6 @@
         "prism", 
         "toc",
         "theme-synapse",
-        "-search",
         "-highlight"
     ],
     "pluginsConfig": {
