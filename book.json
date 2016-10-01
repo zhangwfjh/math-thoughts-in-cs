@@ -10,7 +10,7 @@
     "pluginsConfig": {
         "search": {
                 "maxIndexSize": 100000000
-        }
+        },
         "disqus": {
             "shortName": "zhangwfjh"
         }
