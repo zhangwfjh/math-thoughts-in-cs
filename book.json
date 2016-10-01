@@ -1,15 +1,7 @@
 {
     "plugins": [
         "mathjax",
-        "disqus",
-        "prism", 
-        "toc",
         "theme-synapse",
-        "-highlight"
-    ],
-    "pluginsConfig": {
-        "disqus": {
-            "shortName": "zhangwfjh"
-        }
-    }
+        "-theme-default"
+    ]
 }
