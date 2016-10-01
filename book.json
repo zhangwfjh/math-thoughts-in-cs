@@ -1,7 +1,5 @@
 {
     "plugins": [
-        "mathjax",
-        "theme-synapse",
-        "-theme-default"
+        "mathjax"
     ]
 }
