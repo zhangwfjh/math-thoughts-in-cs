@@ -4,7 +4,7 @@
         "disqus",
         "prism", 
         "toc",
-        "synapse",
+        "theme-synapse",
         "-highlight"
     ],
     "pluginsConfig": {
